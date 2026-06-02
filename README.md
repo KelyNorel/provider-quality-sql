@@ -94,15 +94,18 @@ from comparison.
 
 ## Project Structure
 
+
 ```
 provider-quality-sql/
 ├── data/
 │   ├── raw/          # CMS source files (not tracked in git)
 │   └── processed/    # DuckDB database file (not tracked in git)
+├── figures/          # Generated visualizations
 ├── notebooks/
-│   └── 01_explore.ipynb   # Main analysis notebook
+│   ├── 01_explore.ipynb    # SQL analysis and findings
+│   └── 02_visualize.ipynb  # Charts and visualizations
 ├── src/
-│   └── queries.sql        # Final SQL queries (clean, no Python)
+│   └── queries.sql         # Final SQL queries (clean, no Python)
 ├── .gitignore
 ├── requirements.txt
 └── README.md
